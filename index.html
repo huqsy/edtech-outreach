@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdTech Outreach Email Generator</title>
     
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    
     <!-- Link to External CSS File -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Home Page -->
-    <div id="home-page" class="container">
+    <div id="home-page" class="card">
         <h1>EdTech Outreach Email Generator</h1>
         <p>Create tailored outreach emails addressing common teacher pain points when adopting EdTech.</p>
-        <!-- Buttons to navigate to each pain point -->
-        <button onclick="showPage('affordability')">Affordability</button>
-        <button onclick="showPage('equity')">Equity & Inclusivity</button>
-        <button onclick="showPage('engagement')">Student Engagement</button>
-        <button onclick="showPage('learning_curve')">Low Learning Curve</button>
-        <button onclick="showPage('support')">Real-Time Customer Support</button>
-        <button onclick="showPage('active_learning')">Active Learning Support</button>
-        <button onclick="showPage('learning_aids')">Built-In Learning Aids</button>
-        <button onclick="showPage('cheating_prevention')">Cheating Prevention Tools</button>
-        <button onclick="showPage('ease_of_use')">Ease of Use for Students & Teachers</button>
-        <button onclick="showPage('analytics')">Comprehensive Analytics</button>
-        <button onclick="showPage('compatibility')">Cross-Platform Compatibility</button>
-        <button onclick="showPage('integration')">Integration with Existing Tools</button>
+        <!-- 3x4 Button Grid -->
+        <div class="button-grid">
+            <button onclick="showPage('affordability')">Affordability</button>
+            <button onclick="showPage('equity')">Equity & Inclusivity</button>
+            <button onclick="showPage('engagement')">Student Engagement</button>
+            <button onclick="showPage('learning_curve')">Low Learning Curve</button>
+            <button onclick="showPage('support')">Real-Time Customer Support</button>
+            <button onclick="showPage('active_learning')">Active Learning Support</button>
+            <button onclick="showPage('learning_aids')">Built-In Learning Aids</button>
+            <button onclick="showPage('cheating_prevention')">Cheating Prevention Tools</button>
+            <button onclick="showPage('ease_of_use')">Ease of Use</button>
+            <button onclick="showPage('analytics')">Comprehensive Analytics</button>
+            <button onclick="showPage('compatibility')">Cross-Platform Compatibility</button>
+            <button onclick="showPage('integration')">Integration with Existing Tools</button>
+        </div>
     </div>
 
   <!-- Pain Point Pages (Initially hidden) -->
