@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -10,84 +10,103 @@ body {
     height: 100vh;
 }
 
-/* Container for Page Content */
-.container {
+/* Card Style for Home Page */
+.card {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
     padding: 20px;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Heading Style */
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
     margin-bottom: 20px;
     color: #333;
 }
 
 /* Paragraph Style */
 p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     color: #555;
 }
 
+/* Button Grid Layout */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 /* Button Styles */
 button {
-    display: inline-block;
-    outline: none;
     cursor: pointer;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 14px 24px;
-    border: none;
-    margin: 10px;
-    transition: box-shadow 0.2s ease, transform 0.1s ease;
-    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    outline: 0;
     color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 button:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+button:active {
+    background-color: #0a58ca;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     button {
         font-size: 14px;
-        padding: 12px 20px;
-        margin: 8px;
+        padding: 10px 16px;
     }
 }
 
 @media (max-width: 480px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+
     h1 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     button {
         font-size: 12px;
-        padding: 10px 18px;
-        margin: 6px;
+        padding: 8px 14px;
     }
 }
